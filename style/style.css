@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#logo{
+    height: 100px;
+    justify-self: center;
+}
+
+#pageTitle{
+    color: #8A4F7D;
+    text-shadow: 1px 1px #975d8b;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+#pageHeader{
+    display: grid;
+}
+
+nav{
+    background-color: #FF6B6B;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    margin: 14px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:active{
+    text-decoration: none;
+    color: #8A4F7D;
+}
+
+img{
+    height: 35vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.posts{
+    display: grid;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #FF6B6B;
+    margin: 10px;
+}
+
+/* Tablet Media Query */
+@media only screen and (min-width:600px) {
+    #logo{
+        justify-self: start;
+        height: 125px;
+    }
+}
