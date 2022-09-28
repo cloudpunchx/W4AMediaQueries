@@ -26,6 +26,9 @@ html{
 
 nav{
     background-color: #FF6B6B;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
 }
 
 a{
@@ -64,10 +67,40 @@ main{
     margin: 10px;
 }
 
-/* Tablet Media Query */
+/* Tablet */
 @media only screen and (min-width:600px) {
     #logo{
         justify-self: start;
         height: 125px;
+        margin-left: 10px;
     }
+    #pageTitle{
+        justify-self: start;
+        font-size: 2.5rem;
+        display: block;
+        margin-left: 10px;
+    }
+    nav{
+        justify-self: end;
+        align-self: end;
+    }
+    nav a{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Desktop */
+@media only screen and (min-width:1000px) {
+    #logo{
+        height: 150px;
+    }
+}
+
+a button{
+    color: white;
+    background-color: #975d8b;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
 }
